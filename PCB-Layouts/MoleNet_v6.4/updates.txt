@@ -1,0 +1,4 @@
+- Inverter to the RX side added.
+- Antenna area of ESP increased.
+- Additional I2C pins added to the headers.
+- Headers re-organized for optimized connection to external boards. Added several power and gnd pins.
