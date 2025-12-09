@@ -1,0 +1,7 @@
+- Inverter to the RX side added (BS170 mosfet).
+- Antenna area of ESP increased.
+- Additional I2C pins added to the headers.
+- Headers re-organized for optimized connection to external boards. Added several power and gnd pins.
+-Added 1N5819 protection diode to the input.
+-Voltage input labels are corrected.
+-Lora module changed from RA-01H(SX1276 chip) to RA-01SH(SX1262 chip).
