@@ -25,9 +25,14 @@ The latest version of MoleNet features several key improvements:
   example, available here: [Sparkfun](https://www.sparkfun.com/qwiic)
 
 
-## Older Versions
+## Older Versions of MoleNet (pre-ESP)
 
-Documentation for the ATMEGA-based MoleNet boards can be found in the [documentation directory](docs/MoleNet_ATMEGA.md).
+In the past decade, we used and evaluated different microcontroller platforms
+for MoleNet. The documentation can be found in the corresponding directories:
+
+- [For ATMEGA-based boards](doc/ATMEGA)
+- [For the STM32-based boards (STM32F411)](doc/stm32)
+
 
 ## Changelog
 
