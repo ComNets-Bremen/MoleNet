@@ -13,7 +13,9 @@ high resolution version.
 
 ## Available Components
 
-- LoRa (SX1276) via Ra-01H module
+- LoRa via
+  - SX1276 Ra-01H module till MoleNet 6.3
+  - SX1262 RA-01SH module since MoleNet 7.0
 - BME280
 - SD-card holder
 - qwiic for external I2C components
@@ -30,6 +32,8 @@ the part of the board revision 6.3.
 
 - [Table MoleNet 6.2](hw_doc/6.2.md)
 - [Table MoleNet 6.3](hw_doc/6.3.md)
+
+**Please check also the [CHANGELOG](../CHANGELOG.md) for further changes and issues**
 
 
 ## Pins on the ESP32

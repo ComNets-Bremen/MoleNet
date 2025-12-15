@@ -7,6 +7,21 @@ The different layouts are located in the [PCB-Layouts](PCB-Layouts) directory.
 Each directory (should) contain a `*_schematic.pdf` file with the corresponding
 schematic.
 
+### MoleNet v7.0
+
+- Inverter to the RX side added (BS170 mosfet)
+- Antenna area of ESP increased
+- Additional I2C pins added to the headers
+- Headers re-organized for optimized connection to external boards. Added several power and GND pins
+- Added 1N5819 protection diode to the input (reverse polarity)
+- Input voltage labels corrected
+- Lora module changed from RA-01H(SX1276 chip) to RA-01SH(SX1262 chip)
+
+**Known issues**
+
+- Not yet
+
+
 ### MoleNet v6.3
 
 - Changed the LoRa reset pin to GPIO15: This one keeps the state during reset
