@@ -49,7 +49,20 @@ The following list gives some MoleNet-related publications:
 - Dede, J., Helms, D., & Förster, A. (2021). MoleNet: An Underground Sensor Network for Soil Monitoring. [Electronic Communications of the EASST, 80](https://doi.org/10.14279/tuj.eceasst.80.1132)
 - Sambo, D. W., Dede, J., Mitton, N., & Förster, A. (2023). FuzDeMa: A portable Fuzzy-based Decision-Making tool for reliable communication in Wireless Underground Sensor Networks. [ITU Journal on Future and Evolving Technologies, 4(3), 419-433](https://www.doi.org/10.52953/IXIP2995).
 
-## I Want to Have MoleNet!
+## I need Support or want to Contribute!
+
+The development of MoleNet is mainly done on GitHub. You have the following
+channels:
+
+- For discussions, we are currently trying to move from our mailing list to [GitHub discussions](https://github.com/ComNets-Bremen/MoleNet/discussions). Feel free to join and open new discussions directly [here](https://github.com/ComNets-Bremen/MoleNet/discussions)!
+- You found an issue? [Open an Issue on GitHub](https://github.com/ComNets-Bremen/MoleNet/issues)!
+- You already have a solution? Perfect! Feel free to [create a Pull request on GitHub](https://github.com/ComNets-Bremen/MoleNet/pulls)!
+
+If you need support with the git fundamentals like cloning, forking, branching,
+the different copies of the code etc., please refer to the [GitHub
+documentation](https://docs.github.com).
+
+## I want to have MoleNet!
 
 MoleNet is a dynamic project that is constantly evolving. At its current stage, we do not offer a ready-to-use, fully certified product with complete end-user support.
 
