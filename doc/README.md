@@ -25,13 +25,13 @@ high resolution version.
 
 ## Components and their Connections
 
-MoleNet contains various different on-board parts. The following tables lists
+MoleNet contains various different on-board parts. The following tables list
 the connections and other relevant information for the major parts. For further
-details, refer to [schematics of the board](../PCB-Layouts/). The table lists
-the part of the board revision 6.3.
+details, refer to [schematics of the corresponding board](../PCB-Layouts/).
 
-- [Table MoleNet 6.2](hw_doc/6.2.md)
+- [Table MoleNet 7.0](hw_doc/7.0.md)
 - [Table MoleNet 6.3](hw_doc/6.3.md)
+- [Table MoleNet 6.2](hw_doc/6.2.md)
 
 **Please check also the [CHANGELOG](../CHANGELOG.md) for further changes and issues**
 
