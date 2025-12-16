@@ -3,6 +3,7 @@
 This directory contains the documentation of MoleNet. For the previous
 versions, please refer to the [ATMEGA](ATMEGA) or [stm32](stm32) directory, respectively.
 
+Maybe you are looking for our **[FAQ](FAQ.md)**?
 
 # The Hardware
 
@@ -16,11 +17,11 @@ high resolution version.
 - LoRa via
   - [SX1276](https://www.semtech.com/products/wireless-rf/lora-connect/sx1276) [Ra-01H](https://docs.ai-thinker.com/en/Ra-01H/) module till MoleNet 6.3
   - [SX1262](https://www.semtech.com/products/wireless-rf/lora-connect/sx1262) [RA-01SH](https://docs.ai-thinker.com/en/Ra-01SH/index.html) module since MoleNet 7.0
-- BME280
+- [BME280](https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/)
 - SD-card holder
-- qwiic for external I2C components
+- [qwiic](https://www.sparkfun.com/qwiic) for external I2C components
 - LEDs
-- SDI-12 for environmental sensors
+- [SDI-12](https://www.sdi-12.org/) for environmental sensors
 - Additional pins (analog and digital)
 
 ## Components and their Connections

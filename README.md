@@ -25,6 +25,11 @@ The latest version of MoleNet features several key improvements:
   example, available here: [Sparkfun](https://www.sparkfun.com/qwiic)
 
 
+## Documentation
+
+The main documentation of MoleNet is available [here in the doc
+directory](doc). There, you can also find the **[FAQ](doc/FAQ.md)**.
+
 ## Older Versions of MoleNet (pre-ESP)
 
 In the past decade, we used and evaluated different microcontroller platforms
