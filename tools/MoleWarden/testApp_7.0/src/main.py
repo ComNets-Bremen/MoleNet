@@ -34,7 +34,7 @@ busy = Pin(16, Pin.IN) # Was 45 but fails as it is a strapping pin
 dio1 = Pin(46, Pin.IN)
 
 sx1262 = Transceiver(spi, cs, rst, busy, dio1)
-
+sx1262.set_freq(868.3)
 
 led1 = machine.Pin(GPIO_LED_1, machine.Pin.OUT)
 led2 = machine.Pin(GPIO_LED_2, machine.Pin.OUT)
