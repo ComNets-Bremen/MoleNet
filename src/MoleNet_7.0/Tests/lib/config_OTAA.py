@@ -1,0 +1,3 @@
+AppKey = []
+joinEUI = []
+devEUI = []
