@@ -1,4 +1,4 @@
-# Minimalistic test for new MoleNet boards
+# Test script for MoleNet boards
 # Jens Dede <jd@comnets.uni-bremen.de>
 
 import machine
