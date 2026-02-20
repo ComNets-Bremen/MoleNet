@@ -53,7 +53,7 @@ The following list gives some MoleNet-related publications:
 - Zaman, I., Gellhaar, M., Dede, J., Koehler, H., & Foerster, A. (2016, November). Design and evaluation of MoleNet for wireless underground sensor networks. In 2016 IEEE 41st conference on local computer networks workshops (LCN workshops) (pp. 145-147), [2016 IEEE 41st Conference on Local Computer Networks Workshops (LCN Workshops), Dubai, United Arab Emirates, 2016, pp. 145-147](https://doi.org/10.1109/LCN.2016.040).
 - Dede, J., Helms, D., & Förster, A. (2021). MoleNet: An Underground Sensor Network for Soil Monitoring. [Electronic Communications of the EASST, 80](https://doi.org/10.14279/tuj.eceasst.80.1132)
 - Sambo, D. W., Dede, J., Mitton, N., & Förster, A. (2023). FuzDeMa: A portable Fuzzy-based Decision-Making tool for reliable communication in Wireless Underground Sensor Networks. [ITU Journal on Future and Evolving Technologies, 4(3), 419-433](https://www.doi.org/10.52953/IXIP2995).
-- Block, J., Könsgen, A., Dede, J., Förster, A. (2026, January). Precise Low-Current Measurement Techniques for IoT Devices: A Case Study on MoleNet. [ArXiv, Electrical Engineering and Systems Science > Signal Processing](https://doi.org/10.48550/arXiv.2601.16727)
+- Block, J., Könsgen, A., Dede, J., Förster, A. (2026, January). Precise Low-Current Measurement Techniques for IoT Devices: A Case Study on MoleNet. [arxiv, Electrical Engineering and Systems Science > Signal Processing](https://doi.org/10.48550/arXiv.2601.16727)
 
 ## I need Support or want to Contribute!
 
