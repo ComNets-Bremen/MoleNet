@@ -41,4 +41,7 @@ db.sqlite3
 # Django migrations
 migrations
 
+# Mac OS specific meta information
+.DS_Store
+
 *.lck

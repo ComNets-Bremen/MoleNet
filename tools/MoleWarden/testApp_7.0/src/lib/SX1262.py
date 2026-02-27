@@ -80,7 +80,8 @@ class Transceiver:
         #Set LoRa mode
         self.write(bytes([_SET_PACKET_TYPE, 0x01]))
         
-        self.write(bytes([_SET_DIO3_TXCO_CTRL, 0x02, 0x0, 0x02, 0x80])) #1.8 V for TXCO, delay: 640*15.625us=10ms
+        # removed for the new tranmitter on molenet!
+        #self.write(bytes([_SET_DIO3_TXCO_CTRL, 0x02, 0x0, 0x02, 0x80])) #1.8 V for TXCO, delay: 640*15.625us=10ms 
         self.write(bytes([_SET_DIO2_RFSWITCH, 0x01]))#Enable ANT_SW
         #_SET_REGULATOR_MODE = const(0x96)
         #self.write(bytes([_SET_REGULATOR_MODE, 0x01])) #doesnt help
@@ -142,12 +143,12 @@ class Transceiver:
         
         #optimize Inverted IQ
         val = self.read(bytes([_READ_REGISTER, 0x07, 0x36, 0x00, 0x00]))[4]
-        print(val)
+        print("Current inverted IQ status (0 means inverted IQ polarity, 1 means standard IQ polarity):", (val & 0x04)>>2)
         if inv_iq:
-            self.write(bytes([_WRITE_REG, 0x07, 0x36, val&0xFB]))
+            self.write(bytes([_WRITE_REG, 0x07, 0x36, val&0xFB])) # clear the bit: inverted IQ polarity 
             self.inv_iq = 0x01
         else:
-            self.write(bytes([_WRITE_REG, 0x07, 0x36, val|0x04]))
+            self.write(bytes([_WRITE_REG, 0x07, 0x36, val|0x04])) # set the bit: standard IQ polarity
             self.inv_iq = 0x00
         
         #set mod parameters
@@ -268,18 +269,24 @@ class Transceiver:
                         utime.sleep_ms(1)
                         tx_err = True
                         print("TX Error")
-                        err=self.read(bytes([_GET_DEV_ERRS, 0x00, 0x00, 0x00]))[-1]
+                        ret=self.read(bytes([_GET_DEV_ERRS, 0x00, 0x00, 0x00])) 
+                        err=ret[-1]
+                        print("Error code " + hex(err))
+                        print("RFU " + hex(ret[0])) # Reserved for Future Use (RFU?)
+                        print("Status " + hex(ret[1]))
+                        print("OpError(15:8) " + hex(ret[2]))
+                        print("OpError(7:0) " + hex(ret[3]))
                         if err&0x20:
-                            print("XOSC Start Error")
+                            print("XOSC failed to start")
                         if err&0x40:
-                            print("PLL Lock Error")
+                            print("PLL failed to lock")
                         self.write(bytes([_CLEAR_DEV_ERRS, 0x00, 0x00]))                    
                         break
                     
                 self.write(bytes([_CLEAR_IRQ, 0x02, 0x01]))
             utime.sleep_ms(1)
             self.write(bytes([_SET_SLEEP, 0x04]))#put to sleep mode for saving energy
-                
+            return not tx_err    
         
     def receive(self, freq=868.1, timeout=0):
         """

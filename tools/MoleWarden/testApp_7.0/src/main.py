@@ -12,7 +12,7 @@ import BME280
 from machine import UART, Pin
 # LoRa
 from SX1262 import Transceiver
-from SX1276 import Transceiver
+#from SX1276 import Transceiver
 from machine import SPI, Pin
 import machine
 import utime
