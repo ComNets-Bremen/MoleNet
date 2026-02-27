@@ -1,4 +1,0 @@
-NwkSKey = []
-AppSKey = []
-DevAddr = []
-DevEUI = []
