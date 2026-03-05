@@ -7,6 +7,12 @@ The different layouts are located in the [PCB-Layouts](PCB-Layouts) directory.
 Each directory (should) contain a `*_schematic.pdf` file with the corresponding
 schematic.
 
+### MoleNet v7.1
+
+- Fixed the BUSY pin of the SX1262 from 45 - 39
+- New protection circuit with p-channel MOSFET (IRLML5203). The old one with 1N5819 is available, but unpopulated
+- Additional test scripts etc.
+
 ### MoleNet v7.0
 
 - Inverter to the RX side added (BS170 mosfet)
@@ -15,7 +21,7 @@ schematic.
 - Headers re-organized for optimized connection to external boards. Added several power and GND pins
 - Added 1N5819 protection diode to the input (reverse polarity)
 - Input voltage labels corrected
-- Lora module changed from RA-01H(SX1276 chip) to RA-01SH(SX1262 chip)
+- Lora module changed from RA-01H (SX1276 chip) to RA-01SH (SX1262 chip)
 
 **Known issues**
 

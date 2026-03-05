@@ -30,6 +30,7 @@ MoleNet contains various different on-board parts. The following tables list
 the connections and other relevant information for the major parts. For further
 details, refer to [schematics of the corresponding board](../PCB-Layouts/).
 
+- [Table MoleNet 7.1](hw_doc/7.1.md)
 - [Table MoleNet 7.0](hw_doc/7.0.md)
 - [Table MoleNet 6.3](hw_doc/6.3.md)
 - [Table MoleNet 6.2](hw_doc/6.2.md)
