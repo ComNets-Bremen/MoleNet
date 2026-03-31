@@ -1,0 +1,4 @@
+NwkSKey = []
+AppSKey = []
+DevAddr = []
+DevEUI = []

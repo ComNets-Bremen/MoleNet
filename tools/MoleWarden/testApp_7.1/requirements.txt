@@ -1,0 +1,16 @@
+bitarray==3.8.0
+bitstring==4.3.1
+cffi==2.0.0
+click==8.3.1
+cryptography==46.0.5
+esptool==5.1.0
+intelhex==2.3.0
+markdown-it-py==4.0.0
+mdurl==0.1.2
+pycparser==2.23
+Pygments==2.19.2
+pyserial==3.5
+PyYAML==6.0.3
+reedsolo==1.7.0
+rich==14.2.0
+rich-click==1.9.5
