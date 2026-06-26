@@ -1,8 +1,5 @@
 # MoleNet v7.1 LoRaWAN Setup Guide
 
-Padma Krishnamurthy  
-University of Bremen
-
 ## Part A - Connect MoleNet Board to LoRaWAN
 
 ### Step 1. Confirm LoRa Hardware
