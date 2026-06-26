@@ -84,8 +84,6 @@ molenet-test
 
 ### Step 7. Generate a Unique Device ID
 
-For lectures or multi-node deployments, each board should use a unique TTN end device ID. This helps avoid collisions when users copy the same setup code.
-
 Connect the MoleNet board in Thonny and run:
 
 ```python
@@ -98,17 +96,6 @@ print(device_id)
 
 Use the printed value as the **End device ID** in TTN.
 
-Example output:
-
-```text
-molenet-a1b2c3d4e5f6
-```
-
-Important:
-
-- The **End device ID** is the human-readable TTN device name.
-- The **DevEUI**, **DevAddr**, **AppSKey**, and **NwkSKey** are still generated or provided by TTN.
-- Do not commit real LoRaWAN keys to GitHub.
 
 ### Step 8. Register End Device
 
