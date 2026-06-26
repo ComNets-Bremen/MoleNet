@@ -4,7 +4,7 @@ This folder contains minimal LoRaWAN connection test scripts for the MoleNet v7.
 
 ## Setup Instructions
 
-For the complete setup steps, follow the **MoleNet v7.1 LoRaWAN Setup Guide PDF** included in this folder.
+For the complete setup steps, follow the **MoleNet_v7_1_LoRaWAN_Setup.md** included in this folder.
 
 The PDF explains how to:
 
