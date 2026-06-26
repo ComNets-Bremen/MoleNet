@@ -80,13 +80,28 @@ def leds_off():
         print("LEDs off")
     except Exception as e:
         print("LED off error:", e)
+        
+def wait_lora_not_busy(timeout_ms=1000):
+    busy = Pin(LORA_BUSY, Pin.IN)
+    start = utime.ticks_ms()
 
+    while busy.value() == 1:
+        if utime.ticks_diff(utime.ticks_ms(), start) > timeout_ms:
+            print("LoRa BUSY wait timeout")
+            break
+        utime.sleep_ms(10)
+
+    print("LoRa BUSY is LOW")
 
 def lora_sleep_and_prepare_pins(sx):
     try:
         if sx is not None:
             sx.sleep()
             print("SX1262 sleep() called")
+            
+            # Wait until SX1262 finishes processing the sleep command
+            wait_lora_not_busy(timeout_ms=1000)
+            utime.sleep_ms(50)
     except Exception as e:
         print("SX1262 sleep error:", e)
 
@@ -132,7 +147,11 @@ print("Booting MoleNet v7.1 LoRa deep sleep test")
 print("Wake reason:", machine.wake_reason())
 print("Sleep interval:", SLEEP_MINUTES, "minutes")
 
-utime.sleep_ms(1000)
+if machine.reset_cause() != machine.DEEPSLEEP_RESET:
+    print("Physical reset or fresh boot. Waiting 1 second for Thonny...")
+    utime.sleep_ms(1000)
+else:
+    print("Deep sleep wakeup. Skipping boot delay...")
 
 release_pin_holds()
 disable_wifi_ble()
