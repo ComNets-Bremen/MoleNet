@@ -1,0 +1,3 @@
+The [circuit](https://www.circuit-diagram.org/editor/c/992d119d5fc840f2873c6cd66751a448) ([png](circuit.png),[svg](circuit.svg)) was designed with the online tool [Circuit Diagram Editor](https://www.circuit-diagram.org/editor/) and afterwards edited with [affinity studio](https://www.affinity.studio/) ([af](circuit.af)). The final result is [this](../images/circuit.png):
+
+![result](../images/circuit.png)

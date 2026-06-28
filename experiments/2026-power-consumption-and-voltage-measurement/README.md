@@ -1,0 +1,1 @@
+Documentation is in [power consumption and voltage measurement.md](power consumption and voltage measurement.md). Pdf created with [MacDown3000](https://macdown.app/)'s export function. 
