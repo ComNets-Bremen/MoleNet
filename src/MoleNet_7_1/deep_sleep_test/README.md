@@ -50,3 +50,25 @@ This gives the board only deep sleep current.
 * `sx.sleep()` puts the LoRa chip into sleep mode but does not remove LoRa supply current.
 * To measure board only current, LoRa VDD / RA_VDD must be disconnected.
 * For the lowest board only deep sleep current, remove J4, J13, J16, and disconnect LoRa VDD / RA_VDD.
+
+## Expected Current
+
+
+* ESP32-S3 deep sleep current: **~15–20 µA**
+* SX1262 / RA-01SH sleep current: **~1–2 µA**
+* Remaining board overhead: **~100 µA**
+* Total measured board + LoRa module: **~0.12 mA = 120 µA**
+
+Measured value with GPIO deep sleep holds disabled:
+
+esp32.gpio_deep_sleep_hold(False)
+
+* **~0.12 mA = 120 µA**
+
+If GPIO deep sleep holds are enabled, the measured current is higher:
+
+esp32.gpio_deep_sleep_hold(True)
+
+* **~0.45 mA = 450 µA**
+
+
