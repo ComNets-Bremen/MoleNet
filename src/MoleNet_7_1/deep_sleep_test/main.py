@@ -133,7 +133,7 @@ def go_to_deep_sleep(sx):
 
     try:
         esp32.gpio_deep_sleep_hold(False)
-        print("Deep sleep holds enabled")
+        print("Deep sleep holds disabled")
     except Exception as e:
         print("Deep sleep hold error:", e)
 
