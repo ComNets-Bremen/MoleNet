@@ -13,7 +13,7 @@ The Heltec WiFi LoRa 32 V3 board is equipped with an ESP32-S3 microcontroller. T
     pip3 install esptool
     ```
 
-4. `.bin` file for the firmware. [Download](https://micropython.org/download/GENERIC_S3/)
+4. `.bin` file for the firmware. [Download](https://micropython.org/download/ESP32_GENERIC_S3/)
 
 ## Flashing the Generic MicroPython Firmware
 
@@ -39,7 +39,7 @@ To flash the generic MicroPython firmware onto the Heltec WiFi LoRa 32 V3 board,
    esptool.py --chip esp32s3 --port <COM_PORT> write_flash 0 <path_to_firmware_file>.bin
    ```
 
-   Replace `<COM_PORT>` with the appropriate COM port assigned to the board on your Windows system. [Guide to finding COM_PORT](https://help.fleetmon.com/en/articles/2010900-how-do-i-get-my-com-port-number-windows)
+   Replace `<COM_PORT>` with the appropriate COM port assigned to the board on your Windows system. [Guide to finding COM_PORT](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/establish-serial-connection.html#:~:text=Check%20Port%20on%20Windows)
    
    Replace `<path_to_firmware_file>` with the actual path to the downloaded firmware file.
 
