@@ -24,11 +24,11 @@ The latest version of MoleNet features several key improvements:
 - **qwiic connectivity**: Simplifies integration of I2C-based sensors, as, for
   example, available here: [Sparkfun](https://www.sparkfun.com/qwiic)
 
-
 ## Documentation
 
-The main documentation of MoleNet is available [here in the doc
-directory](doc). There, you can also find the **[FAQ](doc/FAQ.md)**.
+New users can start with the **[Getting Started Guide](doc/GETTING_STARTED.md)** to identify their board version and find the correct software, hardware documentation, and setup instructions.
+
+The main documentation of MoleNet is available [here in the doc directory](doc). There, you can also find the **[FAQ](doc/FAQ.md)**.
 
 ## Older Versions of MoleNet (pre-ESP)
 
