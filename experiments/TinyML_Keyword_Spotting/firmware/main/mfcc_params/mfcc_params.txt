@@ -1,0 +1,57 @@
+TinyML MFCC parameters
+======================
+
+Sample rate       : 16000
+Audio samples     : 16000
+
+N FFT             : 1024
+Window length     : 800
+Hop length        : 160
+
+Center            : True
+Padding mode      : reflect
+Padding each side : 512
+
+Frames            : 101
+
+Hann periodic     : True
+
+Power             : 2.0
+FFT normalized    : False
+One-sided FFT     : True
+FFT bins          : 513
+
+Mel filters       : 128
+Mel scale         : HTK
+Mel norm          : None
+f_min             : 0 Hz
+f_max             : 8000 Hz
+
+Amplitude-to-dB:
+type              : power
+multiplier        : 10
+amin              : 1e-10
+reference         : 1.0
+top_db            : 80
+
+DCT type          : II
+DCT norm          : ortho
+
+MFCC coefficients : 40
+
+Final MFCC shape  : (40, 101)
+
+Binary layouts
+--------------
+
+hann_window.bin
+shape = (800,)
+float32
+
+mel_filterbank_transposed.bin
+shape = (128, 513)
+float32 row-major
+
+dct_matrix.bin
+shape = (128, 40)
+float32 row-major
