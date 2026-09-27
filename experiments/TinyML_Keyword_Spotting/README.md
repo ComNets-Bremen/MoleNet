@@ -1,6 +1,6 @@
 # TinyML Keyword Spotting on MoleNet ESP32-S3
 
-This experiment implements **on-device keyword spotting (KWS)** on the **MoleNet V7.1 ESP32-S3** using an **INMP441 I2S microphone**.
+This experiment implements **on-device keyword spotting (KWS)** on the **MoleNet V6.3 and V7.1 ESP32-S3 boards** using an **INMP441 I2S microphone**.
 
 The system recognizes three spoken keywords:
 
@@ -52,11 +52,13 @@ The firmware records two seconds of audio at 16 kHz and automatically selects th
 
 ### Required Hardware
 
-- MoleNet V7.1 with ESP32-S3
+- MoleNet V6.3 or V7.1 with ESP32-S3
 - INMP441 I2S microphone
 - USB cable
 
 ### INMP441 Wiring
+
+#### MoleNet V7.1
 
 | INMP441 | MoleNet V7.1 |
 |---|---|
@@ -67,9 +69,22 @@ The firmware records two seconds of audio at 16 kHz and automatically selects th
 | SD | GPIO42 |
 | L/R | GND |
 
+#### MoleNet V6.3
+
+| INMP441 | Board connection | Signal | Function |
+|---|---|---|---|
+| VDD | J3 Pin 2 | +3.3 V | Power |
+| GND | J3 Pin 4 or J9 Pin 4 | GND | Ground |
+| L/R | J9 Pin 6 | GND | Select LEFT channel |
+| SCK / BCLK | J9 Pin 7 | GPIO40 | I2S BCLK |
+| WS / LRCLK | J9 Pin 5 | GPIO41 | I2S LRCK / WS |
+| SD | J9 Pin 3 | GPIO42 | I2S data |
+
 `L/R` is connected to GND, therefore the microphone is read from the left I2S channel.
 
-The onboard action LED used in this experiment is:
+> **MoleNet V6.3 warning:** J3 Pin 1 is +12 V. Do not connect the INMP441 VDD to J3 Pin 1. Use J3 Pin 2 (+3.3 V).
+
+For both MoleNet V6.3 and V7.1, the onboard action LED used in this experiment is:
 
 ```text
 D6 -> GPIO38
@@ -579,6 +594,8 @@ WS  -> GPIO41
 SD  -> GPIO42
 L/R -> GND
 ```
+
+For MoleNet V6.3, use the J3/J9 header connections listed in the Hardware section above.
 
 ---
 
